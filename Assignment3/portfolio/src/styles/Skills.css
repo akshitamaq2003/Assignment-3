@@ -1,0 +1,126 @@
+/* Skills Section */
+section #skills {
+  
+  text-align: center;
+  background-color:white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* Matches the background of the skills section in base CSS */
+}
+
+/* Title */
+.title {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  color: black;
+}
+
+/* Skill Container */
+.skills-container {
+  padding: 2rem;
+  margin: 2rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap:initial;
+}
+
+/* Skill Card */
+.skill-card {
+  background-color: #382b2b; /* Darker background for consistency with base CSS */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Consistent with shadow styles in base CSS */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 180px; /* Adds consistent sizing for skill cards */
+  height: 170px; /* Adds consistent sizing for skill cards */
+  color: white; /* Ensures the text is readable on the dark background */
+  text-align: center;
+  margin: 2rem;
+  
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  background-color: #444; /* Slightly lighter on hover */
+}
+
+/* Skill Icon */
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 5pc;
+  /* margin-bottom: 0.rem; */
+}
+
+/* Skill Name and Proficiency */
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #36f1ad; /* Matches color accent from base CSS */
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 3px;
+  color: #bbb; /* Subtle color for proficiency text */
+}
+
+/* Media Queries for Responsiveness */
+
+/* On smaller screens (max-width 768px) */
+@media screen and (max-width: 768px) {
+  .skills-container {
+    gap: 1.5rem;
+  }
+
+  .skill-card {
+    width: 150px;
+    padding: 1.5rem;
+  }
+
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* On smaller screens (max-width 425px) */
+@media screen and (max-width: 425px) {
+  .skills-container {
+    gap: 1rem;
+  }
+
+  .skill-card {
+    width: 120px;
+    padding: 1rem;
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,71 @@
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  height: 80vh;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+}
+
+.section__text {
+  text-align: center;
+  align-self: center;
+}
+
+.section__text__p1,
+.section__text__p2 {
+  font-weight: 600;
+  font-size: 22px;
+
+}
+
+span{
+  color: aqua;
+}
+
+.title {
+  margin: 1.9rem;
+  font-size: 3rem;
+}
+
+.btn-container {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-profile {
+  padding: 1rem;
+  width: 150px;
+  font-weight: bold;
+  border-radius: 2rem;
+}
+
+.btn-profile:hover {
+  background-color: rgba(154, 158, 157, 0.6);
+  font-weight: bold;
+  box-shadow: 0.2px 5px 25px rgb(121, 119, 119);
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem; 
+}
+
+.icon {
+  height: 2rem;
+  cursor: pointer;
+}
+
+.icon:hover {
+  border-radius: 50% 50%;
+  box-shadow: 1px 1px 25px rgb(121, 119, 119);
+  transform: scale(1.2) translateY(-1px);
+}

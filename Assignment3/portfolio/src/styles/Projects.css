@@ -1,0 +1,240 @@
+#projects {
+  padding: 4vh 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 700px;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 425px;  /* Set the width of the slider container */
+  height: auto; /* Desired height for the slider */
+  margin: 2rem 0;
+  position: center;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 500px;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  background-color: white;
+  border: 0.1rem solid rgb(163, 163, 163);
+  max-width: 300px; /* Set a max width for the slide */
+  margin: 0 auto;   /* Center the slide */
+  height: 420px;
+ 
+}
+
+.slide img {
+  width: 50%;
+  height: 150px;     /* Maintain aspect ratio */
+  border-radius: 1rem;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:transparent;
+  color: rgb(10, 10, 10);
+  border: none;
+  font-size: 2rem;
+  /* padding: 0.5rem 1rem; */
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 29rem; /* Adjust to move arrow slightly inside from the left */
+}
+
+.next {
+  right: 29rem; /* Adjust to move arrow slightly inside from the right */
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between buttons */
+  margin-top: 1rem;
+}
+
+.edit-button, .delete-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red background */
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.delete-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+.slide h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #333; /* Darker color for better contrast */
+}
+
+.slide p {
+  font-size: 1rem;
+  color: #666; /* Softer gray for description */
+  line-height: 1.5; /* Better readability with line spacing */
+  margin: 0.5rem 0;
+}
+
+.slide p.technologies {
+  font-size: 1rem;
+  font-style: italic;
+  color: #4CAF50; /* Green color to highlight technologies */
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  max-width: 600px; /* Control form width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+form input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* Button Styles */
+.add-project-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 18px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edit-button {
+  background-color: #ffa500; /* Orange */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgb(196, 194, 194,0.4); */
+  background:#ffffff;
+  z-index: 1000;
+}
+ 
+
+.add-form-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.add-form-button button{
+  width: 200px;
+  color: black;
+  background-color: #ffa500;
+}
+
+#back-button:hover{
+  background-color: #f44336;
+}
